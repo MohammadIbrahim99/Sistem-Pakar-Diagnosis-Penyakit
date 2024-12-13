@@ -1,0 +1,5 @@
+@media (max-width: 400px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}

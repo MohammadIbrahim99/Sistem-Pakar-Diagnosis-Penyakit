@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Pakar Diagnosis Penyakit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sistem Pakar Diagnosis Penyakit</h1>
+      <p>
+        Masukkan gejala yang Anda alami, lalu klik tombol "Diagnosa" untuk
+        melihat hasilnya.
+      </p>
+
+      <!-- Form Input Gejala -->
+      <form id="diagnosis-form">
+        <label for="gejala">Masukkan Gejala (Pisahkan Dengan Koma):</label>
+        <input
+          type="text"
+          id="gejala"
+          placeholder="Contoh: demam, batuk, pilek"
+          required />
+        <button type="submit">Diagnosa</button>
+      </form>
+
+      <!-- Area Hasil Diagnosis -->
+      <div id="hasil" class="hidden">
+        <h2>Hasil Diagnosis</h2>
+        <p id="diagnosis"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
